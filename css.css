@@ -1,0 +1,253 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('fondo.png') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial, sans-serif; 
+   ;
+}
+
+
+.grande {
+    width: 100%; 
+    max-width: 800px; 
+    height: auto;
+    min-height: 200px;
+    text-align: left;
+    display: flex;
+     text-align: justify
+}
+
+.link {
+    display: flex;
+    background: linear-gradient(90deg, rgba(213, 235, 236, 0.513) 79%, rgba(213, 227, 227, 0.513) 80%);
+    padding: 10px;
+    border: groove blue 2px;
+    height: 40px;
+}
+
+.link a {
+    margin: auto;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+.link h2, .link h1 {
+    margin: auto;
+    padding: 0;
+    text-align: right;
+    color: purple;
+}
+
+
+.medio {
+    align-content: left;
+    width: 100%;
+    max-width: 500px; 
+    height: auto;
+    min-height: 200px;
+}
+
+.pequeño {
+    width: 100%;
+    max-width: 299px; 
+    height: auto;
+    min-height: 200px;	
+}
+
+.grande2 p {
+    display: flex;
+}
+
+.grande3 {
+    text-align: left;
+    width: 100%; 
+    max-width: 600px; 
+    height: auto;
+    min-height: 100px;
+    border: double 40px purple;
+}
+
+
+.grande4 {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto;
+    min-height: 100px;
+}
+
+.PIE {
+    background: linear-gradient(90deg, rgba(80, 80, 224, 1) 38%, rgba(4, 124, 197, 0.616) 90%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+.grande5 {
+    text-align: left;
+    width: 100%; 
+    max-width: 600px; 
+    min-height: 100px;
+}
+
+.grande5 img {
+    float: right;
+    margin-right: 10%; 
+}
+
+.link p {
+    margin: auto;
+    padding: 0;
+}
+.hase1, .hase2, .hase3, .hase4 {
+    width: 100%;
+    max-width: 500px; 
+    height: auto;
+    min-height: 30px;
+    display: block;
+}
+
+.hase1 label, .hase2 label, .hase3 label, .hase4 label {
+    float: left;
+}
+
+.hase1 input, .hase2 input, .hase3 input, .hase4 input {
+    float: right;
+}
+
+
+.input {
+    height: 25px;
+    width: 100%; 
+    max-width: 390px;
+    color: black;
+    background-color: cyan;
+    font-size: 1.2em;
+    border-right: 5px;
+}
+
+
+label {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+.button {
+    text-align: center;
+    float: right;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-family: Times New Roman, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    animation: cambio-color 5s infinite;
+}
+
+@keyframes cambio-color {
+    0% { background-color: rgb(255, 0, 0); } 
+    10% { background-color: rgb(255, 255, 0); } 
+    20% { background-color: rgb(0, 255, 0); } 
+    30% { background-color: rgb(0, 255, 255); } 
+    40% { background-color: rgb(0, 0, 255); } 
+    50% { background-color: rgb(255, 0, 255); } 
+    60% { background-color: rgb(255, 0, 0); } 
+    70% { background-color: rgb(255, 255, 0); } 
+    80% { background-color: rgb(0, 255, 0); } 
+    90% { background-color: rgb(0, 255, 255); } 
+    100% { background-color: rgb(0, 0, 255); } 
+}
+
+.button:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+
+.grande7 {
+    text-align: left;
+    width: 100%; 
+    max-width: 600px; 
+    height: auto;
+    min-height: 100px;
+    border: double 40px gray;
+}
+
+
+.border-rgb {
+    width: 100%;
+    max-width: 500px; 
+    height: 350px;
+    border: white 8px outset;
+}
+@media screen and (max-width: 500px) {
+    .link h2 {
+        font-size: 1em;
+    }
+}
+
+.link h2, .link h1 {
+    margin: auto;
+    padding: 0;
+    text-align: right;
+    color: purple;
+    font-size: 1em;
+}
+
+
+.medio {
+    align-content: left;
+    width: 100%; 
+    max-width: 500px;
+    height: auto;
+    min-height: 200px;
+}
+
+
+.pequeño {
+    width: 100%;
+    max-width: 299px;
+    height: auto;
+    min-height: 200px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+@media screen and (max-width: 500px) {
+    .grande {
+        flex-direction: column;
+    }
+
+    .pequeño {
+        align-items: center;
+
+    }.grande7 {
+    text-align: left;
+    width: 100%; 
+    max-width: 350px; 
+    height: auto;
+    min-height: 100px;
+    border: double 20px gray;
+    font-size: 1em
+
+}
+.grande3 {
+	text-align: left;
+    width: 100%; 
+    max-width: 350px; 
+    height: auto;
+    min-height: 100px;
+    border: double 20px gray;
+    font-size: 1em
+} 
+h2 {
+    font-size: 1em;

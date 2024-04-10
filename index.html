@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Block</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body img="fondo.jpg">
+    <div class="link">  
+        <h2>Ruben Alejandro Hernandez </h2>
+        <a href="index.html">Inicio</a>
+        <p>/</p>
+        <a href="Sobre.html">Sobre Mi</a>
+        <p>/</p>
+        <a href="contacto.html">Contactos</a>
+        <p>/</p>
+        <a href="portafolio.html">Portafolio</a>
+    </div>
+    <center>
+    <div class="grande">
+        <div class="medio">
+            <h3>Descripción breve</h3>
+            <p>Soy un conocedor de la cultura geek o popularmente despreciados freequis apasionado por los videojuegos , los mangas y otros medio audivisules. suelo adentrarme en frecuentemente en este mundo virtuale lleno de aventuras y emoción, explorando nuevas historias, desafíos, anigmas y Además, disfruto al adentrarme en las fantasticas y emocionantes historias y el billo y único arte que ofrecen los mangas y tambien sus mangakas, y algunas historias de videojuegos. Siempre estoy buscando nuevas formas de segur alimentado mi pasión por estos mundillos de fantasía, entretenimiento, acción, comedia y romance. Todo lo que este mundo este dispuesto a ofrecerme.</p>
+            <center><button id="curriculum">Ver Curriculum</button></center>
+        </div>
+        <div class="pequeño"><img src="ruben.png" width="300" height="300"></div>
+    </div>
+    </center>
+
+    <center>
+        <div class="grande5">
+            <center><h3>Mis Pasatiempos</h3></center>
+            <h2>Videojuegos</h2>
+            <p>desde una edad muy temprana empeze a tomar justo por los videojueos en especial los que tenian un ambito competetivo, ya que siempre son juegos en cambio contante y por lo tanto te animan a cambiar y a mejorar a adaptarte a un la mayoria de sitauciones,pero ala vez difruto de mundo abierto que me den una gran libertad para explorar y pasar un rato de relajaccion</p>
+            <p>Algunos juegos que disfruto jugar son:</p>
+            
+            <ul>
+                <li>Genshin Impact <img src="images.jpeg" width="150"></li>
+                <li>Mobile leyeds bang bang</li>
+                <li>brawl stars</li>
+                <li>Terraria</li>
+                <li>Minecraft</li>
+            </ul>
+        </div>
+    </center>
+
+    <div class="PIE">
+        <center>
+            <footer>
+                <a href="https://www.instagram.com/monterola.alejandro"><img src="insta.png" width="40"></a>
+                <a href="https://twitter.com/@rubenhe61544704"><img src="x.png" width="40">
+                </a>
+                <a href="https://wa.me/95434626"><img src="w.png" width="40"></a>
+            </footer>
+        </center>
+    </div>
+    <script>
+        document.getElementById("curriculum").addEventListener("click", function() {
+            var urlImagen = "curri.png"; 
+
+            var linkDescarga = document.createElement("a");
+            linkDescarga.href = urlImagen;
+            linkDescarga.download = "curriculum.png"; 
+
+            document.body.appendChild(linkDescarga);
+
+            linkDescarga.click();
+
+            document.body.removeChild(linkDescarga);
+        });
+    </script>
+</body>
+</html>

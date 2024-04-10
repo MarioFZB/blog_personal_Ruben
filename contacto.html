@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Block</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+    <div class="link">
+        <h1>Contacto</h1>
+        <a href="index.html">Inicio</a>
+        <p>/</p>
+        <a href="Sobre.html">Sobre Mi</a>
+        <p>/</p>
+        <a href="contacto.html">Contactos</a>
+        <p>/</p>
+        <a href="portafolio.html">Portafolio</a>        
+    </div>
+    <form>
+     <center>
+        <div class="border-rgb">        
+           
+                <br><br><br><br>          
+                <div class="hase1"><label>Nombre</label><input type="" name="" id="cj1" class="input"></div>
+                <br>
+                <div class="hase2"><label>Correo</label><input type="" name="" id="cj2" class="input"></div>
+                <br>
+                <div class="hase3"><label>Contra</label><input type="" name="" id="cj3" class="input"></div>
+                <br>
+                <div class="hase4"><label>Edad</label><input type="" name="" id="cj4" class="input"></div>
+                <br>              
+                <center><button id="button" class="button">Registrar</button></center>
+            
+        </div>
+    </center>
+    </form>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <div class="PIE">
+        <center>
+            <footer>
+                <a href="https://www.instagram.com/monterola.alejandro"><img src="insta.png" width="40"></a>
+                <a href="https://twitter.com/@rubenhe61544704"><img src="x.png" width="40"></a>
+                <a href="https://wa.me/95434626"><img src="w.png" width="40"></a>
+            </footer>
+        </center>
+    </div>
+
+    <script>
+        document.getElementById("button").addEventListener("click", function(event) {
+            event.preventDefault();
+
+            var cj1 = document.getElementById("cj1").value;
+            var cj2 = document.getElementById("cj2").value;
+            var cj3 = document.getElementById("cj3").value;
+            var cj4 = document.getElementById("cj4").value;
+
+            if (cj1 && cj2 && cj3 && cj4) {
+                alert("Registro exitoso");
+                document.getElementById("cj1").value = "";
+                document.getElementById("cj2").value = "";
+                document.getElementById("cj3").value = "";
+                document.getElementById("cj4").value = "";
+            } else {
+                alert("Por favor, rellene todas las casillas");
+            }
+        });
+    </script>
+</body>
+</html>
